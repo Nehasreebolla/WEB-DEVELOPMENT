@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>Home | IITH Hyderabad </title> 
+       <link rel="icon" href="IITH6.png">
+  <style>
+     .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+}
+
+ .dropdown:hover .dropdown-content {
+  display: block;
+}
+      .First{
+               back-ground-color:white;
+            }
+      #Front{
+               background-color: white;
+               text-align:center;
+               padding-top:2%;
+               padding-bottom:4%;
+             }
+      #Img1{
+               text-align:center;
+              position:center;
+               margin-left:7%
+     
+            }
+      #Body{
+                background-color:white;
+                background-height:50%;
+                
+            }
+       footer{background-color:#000;}
+       #but1{  
+               background-color:pink;
+               margin-left:10%;
+               padding-left:1%;
+               padding-right:1%;
+               padding-top:1%;
+               padding-bottom:1%;
+            }
+        #but2{  
+               background-color:pink;
+               margin-left:50%;
+               padding-left:1%;
+               padding-right:1%;
+               padding-top:1%;
+               padding-bottom:1%;
+            }
+        #but3{  
+               background-color:pink;
+               margin-left:5%;
+               padding-left:1%;
+               padding-right:1%;
+               padding-top:1%;
+               padding-bottom:1%;
+            }
+        #but4{  
+               background-color:pink;
+               margin-left:5%;
+               padding-left:1%;
+               padding-right:1%;
+               padding-top:1%;
+               padding-bottom:1%;
+            }
+        #but5{  
+               background-color:pink;
+               margin-left:5%;
+               padding-left:1%;
+               padding-right:1%;
+               padding-top:1%;
+               padding-bottom:1%;
+            } 
+  </style>
+  </head>
+  <body id="Body">
+  <div>
+       <div style="float:left">
+          <a href="https://iith.ac.in/" ><img id="Img2" src="IITH5.png" ></a> 
+       </div>  
+      
+      <div class="dropdown">
+       <span><button id="but1" type="button"><b>ACADEMICS</b></button></span>
+         <div class="dropdown-content">
+           <ul>
+           <li><a href="https://iith.ac.in/academics/index.html#admissions">Admission Details</li>
+           <li><a href="https://iith.ac.in/academics/programmes-offered/">Programmes Offered</li>
+           <li><a href="https://iith.ac.in/academics/departments/">Departments</li>
+           <li><a href="https://iith.ac.in/academics/calendars-timetables/">Academic Calendars & TimeTables</li>
+           </ul>
+         </div>
+       </div>
+ 
+     <div class="dropdown">
+       <span><button id="but2" type="button"><b>RESEARCH</b></button></span>
+         <div class="dropdown-content">
+         <ul>
+            <li><a href="https://iith.ac.in/research/researchHighlights/">Research Thrust Areas</li>
+            <li><a href="https://iith.ac.in/research/facilities/">Research Facilities</li>
+            <li><a href="https://iith.ac.in/research/centres-incubators/">Centres and Incubators</li>
+          </ul>
+        </div>
+    </div> 
+</div>
+  <br>
+  <div>
+  <img src="IITH1.png" height="400" width="1250" id="Img1">
+  <button type="button" onclick="changeImage1(event)">NEXT</button>
+</div>
+<script>
+  var imageIndex = 1;
+var totalImages = 4; 
+  function changeImage1(event) {
+       event.preventDefault();  
+     var image = document.getElementById("Img1");
+     imageIndex = (imageIndex % totalImages) + 1;
+  image.src = "IITH" + imageIndex + ".png";
+  setInterval(changeImage, 2);
+  }
+
+</script>
+
+  </body>
+</html>
